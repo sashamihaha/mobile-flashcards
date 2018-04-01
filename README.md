@@ -1,17 +1,17 @@
 ## Get started
 
 git clone the project
-
+```
 cd mobile-flashcards
 
 yarn install
 yarn start
-
+```
 or
-
+```
 npm install
 npm start
-
+```
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
