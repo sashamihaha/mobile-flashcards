@@ -10,8 +10,9 @@ export default class NewDeckView extends React.Component {
 
   async addDeck() {
     if (this.state.title){
-      const newDecks = await addDeck(this.state.title);
-    this.props.navigation.navigate('Home', newDecks)
+    const newDecks = await addDeck(this.state.title);
+    const deck = newDecks[this.state.title];
+    this.props.navigation.navigate('IndividualDeckView', deck)
     }
     else {
       Alert.alert(
